@@ -101,6 +101,9 @@
 
 // ES2015 One-Line Array Swap with Destructuring
 
+const arr = [1,2];
+[arr[0], arr[1]] = [arr[1], arr[0]];
+
 // /* Write an ES2015 Version */
 
 // raceResults()
@@ -129,3 +132,7 @@
 //   }
 // */
 
+const raceResults = ([first, second, third, ...rest]) => {
+    return {first, second, third, rest}
+
+}
